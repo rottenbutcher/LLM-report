@@ -1,0 +1,1 @@
+CSR-style checks require section modulus, stress, and local panel criteria. This MVP only approximates section properties from plate and stiffener areas. Buckling is represented by a simplified slenderness proxy and is not equivalent to class formulas.
