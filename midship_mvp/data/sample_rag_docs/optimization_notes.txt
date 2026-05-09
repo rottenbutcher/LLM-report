@@ -1,0 +1,1 @@
+Optimization should reduce area while satisfying constraints. Active constraints often include deck or bottom section modulus and minimum thickness constraints. If stress margins are tight, reduced scantlings can fail quickly.

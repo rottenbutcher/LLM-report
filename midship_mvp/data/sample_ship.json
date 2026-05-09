@@ -1,0 +1,38 @@
+{
+  "ship": {
+    "name": "MVP Demo Bulk Carrier",
+    "length": 180.0,
+    "breadth": 30.0,
+    "depth": 20.0,
+    "scantling_draft": 12.0,
+    "design_bending_moment_hogging": 1000000000.0,
+    "design_bending_moment_sagging": 1000000000.0,
+    "required_section_modulus_deck": 8.0,
+    "required_section_modulus_bottom": 8.0,
+    "deck_z": 20.0,
+    "bottom_z": 0.0
+  },
+  "materials": {
+    "steel_a": {
+      "name": "AH36",
+      "density": 7850.0,
+      "yield_stress": 355000000.0,
+      "allowable_stress_factor": 0.72
+    }
+  },
+  "plates": [
+    {"id":"deck_plate","y":0.0,"z":20.0,"length":24.0,"thickness":0.018,"material":"steel_a","group":"deck","min_thickness":0.012,"is_design_variable":true},
+    {"id":"bottom_plate","y":0.0,"z":0.5,"length":24.0,"thickness":0.02,"material":"steel_a","group":"bottom","min_thickness":0.014,"is_design_variable":true},
+    {"id":"side_shell_port","y":-14.0,"z":10.0,"length":20.0,"thickness":0.016,"material":"steel_a","group":"side","min_thickness":0.012,"is_design_variable":true},
+    {"id":"side_shell_stbd","y":14.0,"z":10.0,"length":20.0,"thickness":0.016,"material":"steel_a","group":"side","min_thickness":0.012,"is_design_variable":true},
+    {"id":"inner_bottom","y":0.0,"z":2.0,"length":18.0,"thickness":0.015,"material":"steel_a","group":"inner_bottom","min_thickness":0.011,"is_design_variable":true},
+    {"id":"longitudinal_bulkhead","y":5.0,"z":10.0,"length":16.0,"thickness":0.014,"material":"steel_a","group":"bulkhead","min_thickness":0.01,"is_design_variable":true},
+    {"id":"hopper_plate","y":10.0,"z":6.0,"length":12.0,"thickness":0.013,"material":"steel_a","group":"hopper","min_thickness":0.009,"is_design_variable":true}
+  ],
+  "stiffeners": [
+    {"id":"deck_longitudinals","y":0.0,"z":19.5,"area":0.25,"material":"steel_a","group":"deck","min_area":0.18,"is_design_variable":true},
+    {"id":"bottom_longitudinals","y":0.0,"z":1.0,"area":0.28,"material":"steel_a","group":"bottom","min_area":0.2,"is_design_variable":true},
+    {"id":"side_longitudinals","y":12.0,"z":10.0,"area":0.22,"material":"steel_a","group":"side","min_area":0.17,"is_design_variable":true},
+    {"id":"bulkhead_longitudinals","y":5.0,"z":10.0,"area":0.2,"material":"steel_a","group":"bulkhead","min_area":0.16,"is_design_variable":true}
+  ]
+}

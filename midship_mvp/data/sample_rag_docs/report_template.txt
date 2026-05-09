@@ -1,0 +1,1 @@
+Interpretation template: summarize initial condition, identify failed checks, explain variable changes after optimization, and explicitly note simplifications. State that class approval requires full CSR, direct strength and fatigue assessments.
